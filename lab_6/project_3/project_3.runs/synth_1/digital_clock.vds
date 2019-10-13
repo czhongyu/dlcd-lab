@@ -1,0 +1,347 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Dec 04 08:05:42 2017
+# Process ID: 14560
+# Current directory: C:/Users/ECHOES/Desktop/project_3/project_3.runs/synth_1
+# Command line: vivado.exe -log digital_clock.vds -mode batch -messageDb vivado.pb -notrace -source digital_clock.tcl
+# Log file: C:/Users/ECHOES/Desktop/project_3/project_3.runs/synth_1/digital_clock.vds
+# Journal file: C:/Users/ECHOES/Desktop/project_3/project_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source digital_clock.tcl -notrace
+Command: synth_design -top digital_clock -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:66]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:66]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 295.711 ; gain = 124.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'digital_clock' [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:22]
+INFO: [Synth 8-638] synthesizing module 'clkdiv1' [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:176]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv1' (1#1) [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:176]
+INFO: [Synth 8-638] synthesizing module 'clkdiv2' [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:186]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv2' (2#1) [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:186]
+INFO: [Synth 8-638] synthesizing module 'BCD_7_segment_display' [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:151]
+INFO: [Synth 8-256] done synthesizing module 'BCD_7_segment_display' (3#1) [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:151]
+INFO: [Synth 8-256] done synthesizing module 'digital_clock' (4#1) [C:/Users/ECHOES/Desktop/project_3/project_3.srcs/sources_1/new/digital_clock.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 314.766 ; gain = 143.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 314.766 ; gain = 143.086
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ECHOES/Desktop/project_3/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ECHOES/Desktop/project_3/Nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ECHOES/Desktop/project_3/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/digital_clock_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/digital_clock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 620.461 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "T2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 26    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module digital_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 26    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module BCD_7_segment_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 620.461 ; gain = 448.781
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\AN_reg[4] ' (FD) to '\AN_reg[7] '
+INFO: [Synth 8-3886] merging instance '\AN_reg[5] ' (FD) to '\AN_reg[7] '
+INFO: [Synth 8-3886] merging instance '\AN_reg[6] ' (FD) to '\AN_reg[7] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AN_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[27] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[28] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[29] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[30] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[31] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[32] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[33] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[34] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[35] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\AN_reg[7] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\AN_reg[6] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\AN_reg[5] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\AN_reg[4] ) is unused and will be removed from module digital_clock.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 620.461 ; gain = 448.781
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[27] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[28] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[29] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[30] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[31] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[32] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[33] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[34] ) is unused and will be removed from module digital_clock.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[35] ) is unused and will be removed from module digital_clock.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    31|
+|4     |LUT2   |     6|
+|5     |LUT3   |    46|
+|6     |LUT4   |     5|
+|7     |LUT5   |    13|
+|8     |LUT6   |    59|
+|9     |FDCE   |    16|
+|10    |FDPE   |    14|
+|11    |FDRE   |    41|
+|12    |LDC    |    14|
+|13    |IBUF   |    17|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   287|
+|2     |  c1     |clkdiv1 |    61|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 620.461 ; gain = 106.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 620.461 ; gain = 448.781
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LDC => LDCE: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 620.461 ; gain = 415.496
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 620.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 04 08:06:14 2017...

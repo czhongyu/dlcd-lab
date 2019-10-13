@@ -1,0 +1,99 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Dec 04 08:08:52 2017
+| Host         : DESKTOP-F0JIDD9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file digital_clock_control_sets_placed.rpt
+| Design       : digital_clock
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    46 |
+| Minimum Number of register sites lost to control set restrictions |   315 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              41 |           16 |
+| No           | No                    | Yes                    |              18 |           18 |
+| No           | Yes                   | No                     |              14 |           14 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              12 |           11 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-----------------+-----------------------+------------------+----------------+
+|      Clock Signal      |  Enable Signal  |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++------------------------+-----------------+-----------------------+------------------+----------------+
+|  myclk1_BUFG           |                 |                       |                1 |              1 |
+|  myclk1_BUFG           |                 | T4_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T4_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T3_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T3_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T3_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T3_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T2_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T2_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T2_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T2_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           |                 | T1_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T4[3]_i_1_n_0   | T4_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T4[3]_i_1_n_0   | T4_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  T1_reg[0]_LDC_i_1_n_0 |                 | T1_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T3[3]_P_i_1_n_0 | T3_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T3[3]_P_i_1_n_0 | T3_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T3[3]_P_i_1_n_0 | T3_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T3[3]_P_i_1_n_0 | T3_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T2[3]_P_i_1_n_0 | T2_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T2[3]_P_i_1_n_0 | T2_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T2[3]_P_i_1_n_0 | T2_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T2[3]_P_i_1_n_0 | T2_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  T4_reg[1]_LDC_i_1_n_0 |                 | T4_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  T4_reg[0]_LDC_i_1_n_0 |                 | T4_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  T3_reg[3]_LDC_i_1_n_0 |                 | T3_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  T3_reg[2]_LDC_i_1_n_0 |                 | T3_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  T3_reg[1]_LDC_i_1_n_0 |                 | T3_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  T3_reg[0]_LDC_i_1_n_0 |                 | T3_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  T2_reg[3]_LDC_i_1_n_0 |                 | T2_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  T2_reg[2]_LDC_i_1_n_0 |                 | T2_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  T2_reg[1]_LDC_i_1_n_0 |                 | T2_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  T2_reg[0]_LDC_i_1_n_0 |                 | T2_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  T1_reg[3]_LDC_i_1_n_0 |                 | T1_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  T1_reg[2]_LDC_i_1_n_0 |                 | T1_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  T1_reg[1]_LDC_i_1_n_0 |                 | T1_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  myclk1_BUFG           | T4[3]_i_1_n_0   | T4[3]_i_3_n_0         |                1 |              2 |
+|  c1/out[0]             |                 |                       |                8 |             13 |
+|  clk_IBUF_BUFG         |                 |                       |                7 |             27 |
++------------------------+-----------------+-----------------------+------------------+----------------+
+
+

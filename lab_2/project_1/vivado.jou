@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Dec 12 18:22:58 2017
+# Process ID: 3532
+# Current directory: D:/Chen Zhongyu/4.Fudan University(Undergraduate)/3.brand new start/数字逻辑与部件设计实验/lab_2/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4552 D:\Chen Zhongyu\4.Fudan University(Undergraduate)\3.brand new start\数字逻辑与部件设计实验\lab_2\project_1\project_1.xpr
+# Log file: D:/Chen Zhongyu/4.Fudan University(Undergraduate)/3.brand new start/数字逻辑与部件设计实验/lab_2/project_1/vivado.log
+# Journal file: D:/Chen Zhongyu/4.Fudan University(Undergraduate)/3.brand new start/数字逻辑与部件设计实验/lab_2/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Chen Zhongyu/4.Fudan University(Undergraduate)/3.brand new start/数字逻辑与部件设计实验/lab_2/project_1/project_1.xpr}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 27 11:09:08 2017
+# Process ID: 31492
+# Current directory: C:/Users/ECHOES/Desktop/project_5/project_5.runs/synth_1
+# Command line: vivado.exe -log binary_counter.vds -mode batch -messageDb vivado.pb -notrace -source binary_counter.tcl
+# Log file: C:/Users/ECHOES/Desktop/project_5/project_5.runs/synth_1/binary_counter.vds
+# Journal file: C:/Users/ECHOES/Desktop/project_5/project_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source binary_counter.tcl -notrace

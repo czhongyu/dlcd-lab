@@ -1,0 +1,91 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Dec 11 09:28:53 2017
+| Host         : DESKTOP-F0JIDD9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bus_control_sets_placed.rpt
+| Design       : bus
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    38 |
+| Minimum Number of register sites lost to control set restrictions |   259 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |            7 |
+| No           | No                    | Yes                    |              24 |           24 |
+| No           | Yes                   | No                     |              12 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------+----------------------------+------------------+----------------+
+|         Clock Signal        | Enable Signal |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------------+---------------+----------------------------+------------------+----------------+
+|  U0/out[0]                  |               | U1/q_reg[2]_P_1            |                1 |              1 |
+|  U1/q_reg[3]_P_1            |               | U1/q_reg[3]_C_1            |                1 |              1 |
+|  U1/q_reg[3]_P_0            |               | U1/q_reg[3]_C_0            |                1 |              1 |
+|  U1/q_reg[3]_LDC_i_1__1_n_0 |               | U1/q_reg[3]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U1/q_reg[2]_P_1            |               | U1/q_reg[2]_C_1            |                1 |              1 |
+|  U1/q_reg[2]_P_0            |               | U1/q_reg[2]_C_0            |                1 |              1 |
+|  U1/q_reg[2]_LDC_i_1__1_n_0 |               | U1/q_reg[2]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U1/q_reg[1]_P_1            |               | U1/q_reg[1]_C_1            |                1 |              1 |
+|  U1/q_reg[1]_P_0            |               | U1/q_reg[1]_C_0            |                1 |              1 |
+|  U1/q_reg[1]_LDC_i_1__1_n_0 |               | U1/q_reg[1]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U1/q_reg[0]_P_1            |               | U1/q_reg[0]_C_1            |                1 |              1 |
+|  U1/q_reg[0]_P_0            |               | U1/q_reg[0]_C_0            |                1 |              1 |
+|  U1/q_reg[0]_LDC_i_1__1_n_0 |               | U1/q_reg[0]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_P_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_P_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_LDC_i_1__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_C_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[3]_C_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[2]_P_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[2]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[2]_LDC_i_1__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[2]_C_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[2]_C_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_P_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_P_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_LDC_i_1__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_C_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[1]_C_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_P_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_P_0            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_LDC_i_2__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_LDC_i_1__1_n_0 |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_C_1            |                1 |              1 |
+|  U0/out[0]                  |               | U1/q_reg[0]_C_0            |                1 |              1 |
+|  U0/out[0]                  | SW_IBUF[0]    |                            |                1 |              4 |
+|  clk_IBUF_BUFG              |               |                            |                7 |             25 |
++-----------------------------+---------------+----------------------------+------------------+----------------+
+
+

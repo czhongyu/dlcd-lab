@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 27 09:10:34 2017
+# Process ID: 25440
+# Current directory: C:/Users/ECHOES/Desktop/project_2_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24840 C:\Users\ECHOES\Desktop\project_2_1\project_2_1.xpr
+# Log file: C:/Users/ECHOES/Desktop/project_2_1/vivado.log
+# Journal file: C:/Users/ECHOES/Desktop/project_2_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ECHOES/Desktop/project_2_1/project_2_1.xpr
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ECHOES/Desktop/project_2_1/project_2_1.runs/impl_1/JK_flip_flop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/ECHOES/Desktop/project_2_1/project_2_1.runs/impl_1/JK_flip_flop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/ECHOES/Desktop/project_2_1/project_2_1.runs/impl_1/JK_flip_flop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

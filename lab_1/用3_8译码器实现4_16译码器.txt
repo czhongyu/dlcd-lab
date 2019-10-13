@@ -1,0 +1,34 @@
+//¶¥²ãÄ£¿édec4_16
+module dec4_16(
+    
+    input [3:0] a1,
+    output [15:0] y1
+    );
+    dec38 t1(.g1(a1[3]),.g2a(0),.g2b(0),.a(a1[2:0]),.y(y1[15:8]));
+    dec38 t2(.g1(~a1[3]),.g2a(0),.g2b(0),.a(a1[2:0]),.y(y1[7:0]));
+    
+endmodule
+
+
+//Èı°ËÒëÂëÆ÷Ä£¿édec38
+
+module dec38(
+    input g1,
+    input g2a,
+    input g2b,
+    input [2:0] a,
+    output [7:0] y
+    );
+    assign y[0]=~(g1&~g2a&~g2b&~a[2]&~a[1]&~a[0]);
+    assign y[1]=~(g1&~g2a&~g2b&~a[2]&~a[1]& a[0]);
+    assign y[2]=~(g1&~g2a&~g2b&~a[2]& a[1]&~a[0]);
+    assign y[3]=~(g1&~g2a&~g2b&~a[2]& a[1]& a[0]);
+    assign y[4]= ~(g1&~g2a&~g2b&a[2]&~a[1]&~a[0]);
+    assign y[5]= ~(g1&~g2a&~g2b&a[2]&~a[1]& a[0]);
+    assign y[6]= ~(g1&~g2a&~g2b&a[2]& a[1]&~a[0]);
+    assign y[7]= ~(g1&~g2a&~g2b&a[2]& a[1]& a[0]);
+    
+endmodule
+
+
+

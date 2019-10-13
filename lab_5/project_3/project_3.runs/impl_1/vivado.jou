@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 27 09:54:56 2017
+# Process ID: 29088
+# Current directory: C:/Users/ECHOES/Desktop/project_3/project_3.runs/impl_1
+# Command line: vivado.exe -log Quad_D_flip_flop.vdi -applog -messageDb vivado.pb -mode batch -source Quad_D_flip_flop.tcl -notrace
+# Log file: C:/Users/ECHOES/Desktop/project_3/project_3.runs/impl_1/Quad_D_flip_flop.vdi
+# Journal file: C:/Users/ECHOES/Desktop/project_3/project_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Quad_D_flip_flop.tcl -notrace
